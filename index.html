@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+     .container>img {
+          width: 0px;
+          display: block;
+          transition: all 0.5s;
+        }
+        .container {
+            width: 300px;
+            border: 2px solid;
+        }
+      #btn {
+        padding: 10px;
+        border:o;
+        font-size:22px;
+        width: 100%
+      }
+    #btn:hover+img {
+        height: 300px;
+        width: 100%
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <button id="btn">movie-1</button>
+    <img src="./brahmayugam.image.jpg" alt="movie-1">
+    </div>
+
+
+    <div class="container">
+        <button id="btn">movie-2</button>
+       <img src="./hridayam.image.jpg" alt="movie-1">
+       </div>
+</body>
+</html>
